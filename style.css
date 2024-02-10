@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e2e2e2; /* Cor de fundo da parte principal (tom do cinza) */
+}
+
+.main__container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tasks__list {
+    list-style-type: none;
+}
+
+.task__item {
+    background-color: #f1f3f5; /* Cor de fundo dos itens de tarefa (tom do cinza) */
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.task-info__container {
+    display: flex;
+    align-items: center;
+}
+
+.task-info__container p {
+    margin-left: 10px;
+    color: #000;
+}
+
+.task__button--remove-task {
+    background-color: transparent; 
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.task__button--remove-task::after {
+    content: "🗑️"; /* Ícone de lixeira */
+}
+
+/* Cores dos spans */
+.span-urgent {
+    background-color: #e40404; /* Cor do span 'urgente' (tom do vermelho) */
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.span-normal {
+    background-color: #028302; /* Cor do span 'normal' (tom do verde) */
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.span-important {
+    background-color: #f3a703; /* Cor do span 'importante' (tom do amarelo) */
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+/* Estilo para inputs */
+.input__box {
+    width: 70%;
+    background-color: #ebebeb; /* Cor de fundo dos inputs (tom do cinza) */
+    color: #7e7e7e;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right: 1%;
+}
+
+.form__container {
+    background-color: #fdfdfd; /* Cor primária (tom do azul) */
+    padding: 20px;
+    border-radius: 10px;
+    color: #fdfdfd;
+    margin-bottom: 20px;
+}
+
+.form__title {
+    margin-bottom: 10px;
+}
+
+.title2 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: rgb(10, 10, 10);
+}
+
+/* Botão Adicionar Tarefa */
+.form__button--add-task {
+    width: 100%;
+    background-color: #3b5bdb;
+    color: #fdfdfd; /* Cor primária (tom do azul) */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form__button--add-task:hover {
+    background-color: #21910b; 
+    color: black;
+}
+
+/* Estilização do header */
+.header__container {
+    background-color: white; /* Cor primária (tom do azul) */
+    padding: 1%;
+    color: white;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__input--search {
+    width: 40%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 21%;
+
+}
+
+.header__input--search:focus {
+    outline: none;
+}
+
+.header__title {
+    font-size: 1.5rem;
+    color: #3b5bdb;
+    font-weight: bold;
+    margin-left: 21%;
+}
+
+.form__input-container {
+    display: flex;
+}
+
+.form__input--text {
+    width: 70%;
+}
+
+.form__input--priority {
+    width: 30%;
+    margin-left: 1%; /* Espaço de 1% entre os elementos */
+}
+
+.tasks__container {
+    background-color: #fdfdfd; /* Cor primária (tom do azul) */
+    padding: 20px;
+    border-radius: 10px;
+    color: #fdfdfd;
+    margin-bottom: 20px;
+}
+
+.tasks__container h2 {
+    font-size: 1rem;
+    margin-bottom: 2%;
+    color: #000; /* cor do texto */
+
+}
+
+.tasks__list {
+    list-style: none;
+    padding: 0;
+}
+
+.task__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f0f0f0; /* Cor de fundo dos itens */
+    border-radius: 5px;
+}
+
+.task-info__container {
+    display: flex;
+    align-items: center;
+}
+
+.task-type {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.span-urgent {
+    background-color: red; /* Cor de fundo para tarefas urgentes */
+}
+
+.span-important {
+    background-color: orange; /* Cor de fundo para tarefas importantes */
+}
+
+.span-normal {
+    background-color: green; /* Cor de fundo para tarefas normais */
+}
+
+.task__button--remove-task {
+    color: #fff; /* Cor do texto do botão */
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Media query para tornar o layout mais responsivo */
+@media screen and (max-width: 768px) {
+    .main__container {
+        width: 80%;
+    }
+
+    .header__title {
+        margin-left: 5%;
+    }
+
+    .header__input--search {
+        width: 50%;
+        margin-right: 5%;
+    }
+
+    .form__input--text,
+    .form__input--priority {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .tasks__list {
+        padding: 10px;
+    }
+
+    .task-info__container p {
+        font-size: 0.9rem;
+    }
+}
