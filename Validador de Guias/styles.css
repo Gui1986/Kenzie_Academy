@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#pdfFileInput {
+    margin: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#output {
+    margin-top: 20px;
+}
+
+.pagenumber {
+    font-weight: bold;
+    color: #333;
+}
+
+.correto {
+    color: #4CAF50;
+}
+
+.incorreto {
+    color: #FF5733;
+}
